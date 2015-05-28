@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Trade.gov Developer Portal | Trade.gov Developer Portal</title>
+
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/stylesheets/tabs.css">
+    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="/stylesheets/query.css">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-27059663-3', 'trade.gov');
+      ga('send', 'pageview');
+    </script>
+    <script src="http://code.jquery.com/jquery-2.1.0.js"></script>
+      <link href='/swagger-ui/css/typography.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='/swagger-ui/css/screen.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='/swagger-ui/css/print.css' media='print' rel='stylesheet' type='text/css'/>
+  
+  <script src='/swagger-ui/lib/jquery.slideto.min.js' type='text/javascript'></script>
+  <script src='/swagger-ui/lib/jquery.wiggle.min.js' type='text/javascript'></script>
+  <script src='/swagger-ui/lib/jquery.ba-bbq.min.js' type='text/javascript'></script>
+  <script src='/swagger-ui/lib/handlebars-2.0.0.js' type='text/javascript'></script>
+  <script src='/swagger-ui/lib/underscore-min.js' type='text/javascript'></script>
+  <script src='/swagger-ui/lib/backbone-min.js' type='text/javascript'></script>
+  <script src='/swagger-ui/swagger-ui.js' type='text/javascript'></script>
+  <script src='/swagger-ui/lib/highlight.7.3.pack.js' type='text/javascript'></script>
+  <script src='/swagger-ui/lib/marked.js' type='text/javascript'></script>
+  
+  
+  <script type="text/javascript">
+    function loadSwaggerUi(url, domId) {
+      var ui = new SwaggerUi({
+        url: url,
+        dom_id: domId,
+        supportedSubmitMethods: [],
+        onComplete: function(swaggerApi, swaggerUi){
+          $('pre code').each(function(i, e) {
+            hljs.highlightBlock(e)
+          });
+        },
+        onFailure: function(data) {
+          log("Unable to Load SwaggerUI");
+        },
+        docExpansion: "list",
+        sorter : "alpha"
+      });
+      ui.load();
+    }
+    
+    function log() {
+      if ('console' in window) {
+        console.log.apply(console, arguments);
+      }
+    }
+  </script>
+
+  </head>
+
+  <body>
+  <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="/"><img src="/images/trade_developer.png" alt="logo"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li id="box-menu"><a href="/guidance.html">Guidance</a></li>
+                <li id="box-menu"><a href="/contact.html">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" id="box-menu" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img src="/images/grid-icon.png" alt="logo"></a>
+              <ul class="dropdown-menu" role="menu">
+              <h3 id="additional-resources">Additional Resources</h3>
+                <li><a href="/app-gallery.html">App Gallery</a></li>
+                <li><a href="/api-faqs.html">API FAQs</a></li>
+                <li><a href="/change-log.html">Change Log</a></li>
+                <li><a href="/tos.html">Terms of Service</a></li>
+              </ul>
+            </li>
+            <li><div class="imageBox">
+    <div class="imageinn">
+    <div class="item">
+      <img src="/images/github-blue.png" alt="github-light">
+      </div>
+    </div>
+
+    <div class="hoverImg">
+    <div class="item">
+      <a href="https://github.com/InternationalTradeAdministration/developerportal"><img src="/images/github-dark.png" alt="github-grey"></a>
+      <span class="caption">ITA on Github</span>
+    </div>
+    </div>
+    </div></li>
+
+    <header id="mob" class="navbar-toggle collapsed" aria-expanded="false">
+      <h3>API Key</h3>
+      <p class="view"><a class="" href="https://api.govwizely.com">Get an API Key</a></p>
+      <h3>Available APIs</h3>
+      
+        <p class="view"><a class="" href="market-research-library.html">Market Research Library</a></p>
+      
+        <p class="view"><a class="" href="consolidated-screening-list.html">Consolidated Screening List</a></p>
+      
+        <p class="view"><a class="" href="trade-events.html">Trade Events</a></p>
+      
+        <p class="view"><a class="" href="trade-leads.html">Trade Leads</a></p>
+      
+        <p class="view"><a class="" href="tariff-rates.html">Tariff Rates</a></p>
+      
+        <p class="view"><a class="" href="faqs-exporting.html">FAQs on Exporting</a></p>
+      
+        <p class="view"><a class="" href="ita-office-locations.html">ITA Offices & Centers</a></p>
+      
+        <p class="view"><a class="" href="ita-trade-articles.html">Trade News & Articles</a></p>
+      
+      <h3>Additional Resources</h3>
+      
+        <p class="view"><a class="" href="guidance.html">Guidance</a></p>
+      
+        <p class="view"><a class="" href="contact.html">Contact</a></p>
+      
+        <p class="view"><a class="" href="app-gallery.html">App Gallery</a></p>
+      
+        <p class="view"><a class="" href="api-faqs.html">API FAQs</a></p>
+      
+        <p class="view"><a class="" href="change-log.html">Change Log</a></p>
+      
+        <p class="view"><a class="" href="tos.html">Terms of Service</a></p>
+      
+      <p class="view"><a href="https://github.com/InternationalTradeAdministration/developerportal">ITA on Github</a></p>
+    </header>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+  <div class="container">
+    <div class="wrapper">
+      <header id="full">
+  <h3>API Key</h3>
+  <p class="view"><a href="https://api.govwizely.com">Get an API Key</a></p>
+  <br/>
+  <h3>Available APIs</h3>
+  
+    <p class="view"><a class="" href="market-research-library.html">Market Research Library</a></p>
+  
+    <p class="view"><a class="" href="consolidated-screening-list.html">Consolidated Screening List</a></p>
+  
+    <p class="view"><a class="" href="trade-events.html">Trade Events</a></p>
+  
+    <p class="view"><a class="" href="trade-leads.html">Trade Leads</a></p>
+  
+    <p class="view"><a class="" href="tariff-rates.html">Tariff Rates</a></p>
+  
+    <p class="view"><a class="" href="faqs-exporting.html">FAQs on Exporting</a></p>
+  
+    <p class="view"><a class="" href="ita-office-locations.html">ITA Offices & Centers</a></p>
+  
+    <p class="view"><a class="" href="ita-trade-articles.html">Trade News & Articles</a></p>
+  
+  </p>
+</header>
+
+            <!--<section id="home">
+      <h1><a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to ITA's Developer Portal
+		<div class="imageBox">
+		<div class="imageinn">
+		<div class="item">
+    	<img src="images/GitHub-Mark-Light-32px.png" alt="github-light">
+    	</div>
+		</div>
+	
+		<div class="hoverImg">
+		<div class="item">
+    	<a href="https://github.com/InternationalTradeAdministration/developerportal"><img src="images/GitHub-Mark-Grey-32px.png" alt="github-grey"></a>
+    	<span class="caption">ITA on Github</span>
+		</div>
+		</div>
+		</div>
+	   </section>-->
+      
+       <section id="intro">
+      	<div class="clearfix">
+		<ul id="info" >
+		<div id="sect1">
+		<h1>Welcome to ITA's Developer Portal</h1>
+		<h3>Data Services Platform</h3>
+		<p>Through ITA's Developer Portal, the International Trade Administration (ITA) gives software developers documentation and instructions for accessing ITA’s Data Services Platform. In turn, the Data Services Platform provides direct access to authoritative information on U.S. exporting and international trade intended specifically for public use and dissemination.</p>
+		<p>ITA has built the platform to be the central source for exporting data important to small and medium sized U.S. businesses.  We encourage software developers to integrate this data into their applications and mash-ups to help U.S. small business owners expand their business overseas while creating jobs at home.</p>
+		<p><strong>Please review the list of Available APIs</strong> in our navigation menu. We will continue to add APIs as they become available.</p>
+		</div>
+		
+		<div class="clearfix">
+		<div id="sect2">
+		
+		<h3>What Can You Find Here?</h3>
+		
+		<!--icon 1-->
+		<ul>
+		<center><a href="guidance.html"><img   src="images/guidance.png" alt="guidance"></br>
+		<h3 class="icon-title">Guidance</h3></a>
+		<p>If you are not a developer get guidance on integrating ITA's data into your Web site or mobile app.</p></center>
+		</ul>
+		
+		<!--icon 2-->
+		<ul>
+		<center><a href="app-gallery.html"><img   src="images/apps.png" alt="apps"></br>
+		<h3 class="icon-title">App Gallery</h3></a>
+		<p>Get ideas from other organizations that have used ITA's data in their Web sites and mobile apps.</p></center>
+		</ul>
+
+		<!--icon 3-->
+		<ul class="last">
+		<center><a href="change-log.html"><img   src="images/changes.png" alt="changes"></br>
+		<h3 class="icon-title">Change Log</h3></a>
+		<p>Find out about the latest updates to make sure you're getting the most out of the APIs.</p></center>
+		</ul>
+		
+		</div>
+		</div>	
+		</ul>
+
+		<ul id="side">
+		<h3>News</h3>
+        		<!--news line 1-->
+        <p>
+        <a href="https://github.com/InternationalTradeAdministration/developerportal/wiki/Submit-Your-App-that-Uses-ITA's-APIs">
+        <p class="news">Have you used ITA's APIs to create a cool app or Web page?  Let us know.</p>
+        </a>
+        <h7>May 4, 2015</h7>
+        </p>
+        
+        <!--news line 2-->
+        <p class="list">
+        <a href="https://github.com/InternationalTradeAdministration/developerportal/wiki/Version-2-of-ITA%E2%80%99s-Data-Services-Platform-Released">
+        <p class="news">Version 2 of ITA's Data Services Platform Released.</p>
+        </a>
+        <h7>March 31, 2015</h7>
+        </p>
+        
+        <!--news line 3-->
+        <p class="list">
+        <a href="https://github.com/InternationalTradeAdministration/developerportal/wiki/You-Can-Now-Use-HTTPS-for-Your-Calls">
+        <p class="news">You can now use HTTPS as well as HTTP for your API calls.</p>
+        </a>
+        <h7>January 13, 2015</h7>
+        </p>
+        
+        <!--news line 4-->
+        <p class="list">
+        <a href="https://www.surveymonkey.com/s/LYVLXW9">
+        <p class="news">Please give us feedback about the APIs and the documentation by filling out our survey on Survey Monkey.</p>
+        </a>
+        <h7>December 12, 2014</h7>
+        </p>
+		</ul>
+
+	  </div>
+      </section>
+
+      <section id="foot">
+ <center><p><small> <a href="http://www.usa.gov">USA.gov</a> | <a href="http://trade.gov/foia">FOIA</a>  | <a href="http://trade.gov/privacy.asp">Privacy Policy</a>  | <a href="http://trade.gov/endorse.asp">Disclaimer</a>  |
+            <a href="http://trade.gov/ITAiqs.pdf">Information Quality Guidelines</a></small></p></center>
+
+<p class="foot">The <a href="http://www.trade.gov">International Trade Administration</a>, <a href="http://www.commerce.gov">U.S.
+            Department of Commerce</a>, manages this global trade site to provide access to ITA information on promoting trade and investment, strengthening
+            the competitiveness of U.S. industry, and ensuring fair trade and compliance with trade laws and agreements. External links to other Internet
+            sites should not be construed as an endorsement of the views or privacy policies contained therein.</p>
+</section>
+
+<script src="/javascripts/scale.fix.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/javascripts/ie10-viewport-bug-workaround.js"></script>
+<script>
+$(function(){
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('current');
+    }
+  });
+});
+</script>
+<script src="/javascripts/jquery-xdomainrequest.js"></script>
+<script src="/javascripts/affix.js"></script>
+<script src="/javascripts/jquery.autosize.js"></script>
+<script src="/javascripts/mrl-query.js"></script>
+
+    </div>
+    </div>
+  </body>
+</html>

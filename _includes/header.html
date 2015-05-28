@@ -1,0 +1,10 @@
+<header id="full">
+  <h3>API Key</h3>
+  <p class="view"><a href="{{ site.webservices_baseurl }}">Get an API Key</a></p>
+  <br/>
+  <h3>Available APIs</h3>
+  {% for link in site.left_nav_available_apis %}
+    <p class="view"><a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a></p>
+  {% endfor %}
+  </p>
+</header>
